@@ -19,9 +19,6 @@ int main(void)
 	spi.set_manufacturer_string("Harmon Instruments, LLC");
 	spi.set_prod_string("ice40");
 	spi.set_serial("cal2");
-	//spi.set_lock_byte();
-
-	//spi.get_lock_byte();
 
 	uint8_t pcd[] = {2, 2, 2, 2,
 		       2, 4, 2, 2,
@@ -39,4 +36,7 @@ int main(void)
 		1, //uint8_t release_minor,
 		0x1F//uint8_t mask
                 );
+
+	spi.get_lock_byte();
+	//spi.set_lock_byte();
 }

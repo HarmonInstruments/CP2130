@@ -14,5 +14,9 @@ rom: rom.cpp $(SRC) $(HEADERS)
 	g++ -o rom rom.cpp $(SRC) -lusb-1.0 $(CCFLAGS)
 	size rom
 
+cal: cal.cpp $(SRC) $(HEADERS)
+	g++ -o cal cal.cpp $(SRC) -lusb-1.0 $(CCFLAGS)
+	size cal
+
 clean:
-	rm -rf *.o *.so *~ example ice40 rom
+	rm -rf *.o *.so *~ example ice40 rom cal

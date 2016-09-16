@@ -58,4 +58,8 @@ int main(void)
 	spi.write(v);
 	usleep(1000);
 	spi.set_gpio(9,2,1);
+	usleep(100000);
+	v = vecf("/home/dlharmon/vna/fpga/cm36/cal.bin");
+	v.resize(v.size()+1000);
+	spi.write(v);
 }
