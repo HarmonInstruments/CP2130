@@ -1,5 +1,7 @@
-# CP2130
+# CP2130 - Unmaintained
 SiLabs CP2130 USB to SPI Llbusb C++ class
+
+The CP2130 is no longer used by Harmon Instruments and this repo will be archived and no longer be maintained. 
 
 CP2130 interface spec
 http://www.silabs.com/Support%20Documents/TechnicalDocs/AN792.pdf
